@@ -6,8 +6,11 @@ on:
     types:
       - opened
       - reopened
-      - synchronize
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 concurrency: preview-${{ github.ref }}
 
 jobs:
